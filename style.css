@@ -77,7 +77,7 @@
 }
 
 .ex-1-square:hover {
-    background-color: salmon;
+    background-color: white;
 }
 
 /* Solution 2 */
@@ -215,32 +215,21 @@
 
 /* Solution 13 */
 
-/* .ex-12-button, .ex-13-button {
-    position: relative;
-    display: block;
-    width: 200px;
-    height: 70px;
-    text-transform: uppercase;
-    border: 3px solid #1b3c59;
-    color: #1b3c59;
-    font-size: 20px;
-    line-height: 70px;
-    text-align: center;
-    text-decoration: none;
+.ex-13-button:hover .ex-13-top-white {
+    animation-name: thirteen-top-anime;
+    animation-duration: 4s;
 }
-.ex-12-top-white, .ex-13-top-white {
-    position: absolute;
-    top: -10px;
-    left: 10%;
-    background: #f5f5f5;
-    width: 60px;
-    height: 20px;
+
+/* Please, I'll style only one div for now :P */
+.ex-13-bottom-white {
+    visibility: hidden;
 }
-.ex-12-bottom-white, .ex-13-bottom-white {
-    position: absolute;
-    bottom: -10px;
-    right: 20%;
-    background: #f5f5f5;
-    width: 60px;
-    height: 20px;
-} */
+
+@keyframes thirteen-top-anime {
+    0% {left: 10%; top:-10px; background-color: white;}
+    20% {left: 100%; top:-10px; background-color: white;}
+    40% {left: 100%; top: 100%; background-color: white;}
+    60% {left: -60px; top: 100%; background-color: white;}
+    80% {left: -60px; top: -10px; background-color: white;}
+    100% {left: 10%; top:-10px; background-color: white;}
+}
